@@ -6,7 +6,6 @@ import requests
 import pandas as pd
 import datetime as dt
 from tiingo import TiingoClient
-import os
 import pandas_datareader as pdr
 import numpy as np
 import plotly.express as px
