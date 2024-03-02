@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.express as px
 from tiingo import TiingoClient
-import datetime
 from utility import utility as helper
 
 st.set_page_config(layout="wide")
