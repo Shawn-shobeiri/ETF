@@ -1,5 +1,4 @@
 import streamlit as st
-
 from utility import utility as helper
 
 st.set_page_config(layout="wide")
