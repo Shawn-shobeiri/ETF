@@ -5,7 +5,8 @@ import streamlit as st
 import requests
 import pandas as pd
 import datetime as dt
-from tiingo import TiingoClient
+import tiingo as tn
+#from tiingo import TiingoClient
 import pandas_datareader as pdr
 import numpy as np
 import plotly.express as px
@@ -23,7 +24,7 @@ def get_data(ETFs, startDate):
     config={}
     config['session'] = True
     config['api_key'] = api_key
-    client = TiingoClient(config)
+    client = tn.TiingoClient(config)
     startDate = startDate.strftime('%Y-%m-%d')
     endDate = dt.datetime.now().strftime('%Y-%m-%d')
     ETFs = [ticker.strip().upper() for ticker in ETFs.split(',')]
